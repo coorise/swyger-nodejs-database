@@ -4,6 +4,7 @@ services:
   database:
     container_name: swyger-database
     image: swyger/nodejs-database:0.1.0
+    build: ./database
     env_file: .env
     depends_on:
       - mongodb
