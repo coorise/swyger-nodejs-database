@@ -24,9 +24,9 @@ export class typeDatabase {
    * @async
    */
   static connect(options: any): void {
-      //console.log('file ',options)
+    //console.log('file ',options)
 
-      const connections = createConnections(options);
+    const connections = createConnections(options);
     connections
       .then( (con) => {
         let ENV = ""
@@ -40,7 +40,7 @@ export class typeDatabase {
         }
         console.log('--------------Database List: Begin-------------')
         options.forEach((db:any) =>{
-            console.log(`--> Connected to ${db.type}: ${db.name} name established on port ${db.port} (${ENV})`)
+          console.log(`--> Connected to ${db.type}: ${db.name} name established on port ${db.port} (${ENV})`)
           //logger.log('info', `Connection to ${db.type}: ${db.name} server established on port ${db.port} (${ENV})`);
         })
         console.log('--------------Database List: End---------------')
