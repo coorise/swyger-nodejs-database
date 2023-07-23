@@ -10,7 +10,7 @@ export default {
         version: process.env.APP_VERSION ||version,
         contact: {
             name: "@swyger/database",
-            email: "support-database.swyger@agglomy.com",
+            email: "swyger.support@agglomy.com",
             url: "https://swyger.agglomy.com", // your website
         },
     },
