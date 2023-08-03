@@ -151,7 +151,7 @@ let sendResultWithError=async (service,option,req,res,next)=>{
                         //console.log(`Signed out!`);
                     }).catch(e=>{})
                 let error
-                if(result?.error) error={storage:result?.error}
+                if(result?.error) error={database:result?.error}
                 if(result?.data || result?.data===false || result?.error){
                     response.data={
                         data:result.data,
