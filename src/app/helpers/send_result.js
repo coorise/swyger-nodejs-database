@@ -146,7 +146,6 @@ let sendResultWithError=async (service,option,req,res,next)=>{
                     result = await service[option.function](req.entitySchema,data,option?.args);
                 }
                 console.log('request path ', listen+path)
-                console.log('result ', result)
 
                 await req?.acebaseClient?.auth?.signOut()
                     .then(result => {
